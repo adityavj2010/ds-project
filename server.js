@@ -1,8 +1,13 @@
 const express = require('express');
 const path = require('path');
-
+const bodyParser = require('body-parser');
+const router = require('./backend/router');
 const app = express();
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+console.log('router')
 
+app.use('/api', router)
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname+'/build'));
 
