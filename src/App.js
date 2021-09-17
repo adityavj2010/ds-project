@@ -36,8 +36,22 @@ function App() {
         </Container>
       </Navbar>
       <Container>
+        <Row className="mt-2">
+          <Col>
+            <h3>{message}</h3>
+          </Col>
+        </Row>
         <Row>
-          <Col>DS Project</Col>
+          <Col>
+            <FormControl
+              placeholder="Add text"
+              value={text}
+              onChange={(event) => changeText(event.target.value)}
+            />
+          </Col>
+          <Col>
+            <Button onClick={onSubmit}>Submit</Button>
+          </Col>
         </Row>
       </Container>
     </>
