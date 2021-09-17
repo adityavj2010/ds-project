@@ -9,6 +9,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/", function (req, res) {
+  console.log("req.body", req.body);
   writeData(req.body.message).then(() => {
     res.send({ message: req.body.message });
   });

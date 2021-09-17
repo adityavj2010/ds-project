@@ -13,6 +13,7 @@ function readData() {
 }
 
 function writeData(data) {
+  console.log("DATA", data);
   return new Promise((resolve, reject) => {
     fs.writeFile(filePath, data, ENCODING, (err, data) => {
       if (err) {
