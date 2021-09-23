@@ -1,5 +1,8 @@
 import { CONFIG } from "../config";
-
+/**
+ *  Name: ApiService
+ *  Description: We are using this class to hit apis to the backend
+ */
 class ApiService {
   getMessage() {
     return fetch(CONFIG.URL + "/").then((response) => response.json());

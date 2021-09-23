@@ -14,15 +14,18 @@ import {
 } from "react-bootstrap";
 
 function App() {
+  //The message to be displayed
   const [message, changeMessage] = useState("");
+  //The text in the inputBox
   const [text, changeText] = useState("");
+
+  //On first time load, getting the text message
   useEffect(() => {
     api.getMessage().then((data) => {
       changeMessage(data.message);
     });
   }, []);
   const onSubmit = () => {
-    console.log("TEXT", text);
     api.setMessage(text).then((response) => {
       changeMessage(response.message);
     });

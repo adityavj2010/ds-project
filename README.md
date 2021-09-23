@@ -1,9 +1,16 @@
-#GETTING STATED
+#Description
+For front-end we have used react.js and bootstrap for styling
+For back-end we have used node.js
+For DB we have used simple text files
 
+While deploying, we have used node.js backend itself to deploy the react based front-end
+Front-end and backend are running on the same port 8080 in the docker container. The backend apis have a pre text 'api'.
+
+
+#GETTING STATED
 Install Docker 
 
 Run the following
-
 Building the image 
 docker build -t IMAGE_NAME .
 

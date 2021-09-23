@@ -1,6 +1,11 @@
 const fs = require("fs");
 const filePath = `${__dirname}/data.txt`;
 const ENCODING = "utf8";
+
+/**
+ * This function gets text from the data.xt file
+ * @returns Returning the data from the text file
+ */
 function readData() {
   return new Promise((resolve, reject) => {
     fs.readFile(filePath, ENCODING, (err, data) => {
@@ -12,8 +17,10 @@ function readData() {
   });
 }
 
+/**
+ * This function writes to the data.txt file
+ */
 function writeData(data) {
-  console.log("DATA", data);
   return new Promise((resolve, reject) => {
     fs.writeFile(filePath, data, ENCODING, (err, data) => {
       if (err) {
