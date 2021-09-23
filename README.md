@@ -5,6 +5,7 @@ We are using basic client server model and communication is taking place using r
 While deploying, we have used node.js backend itself to deploy the react based front-end
 Front-end and backend are running on the same port 8080 in the docker container. The backend apis have a pre-text 'api'.
 
+
 ![Project1Phase1](https://user-images.githubusercontent.com/17945003/134568587-9823a828-4c7e-4b0f-b9b9-9e94ebede52e.png)
 
 
