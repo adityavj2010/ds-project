@@ -1,9 +1,6 @@
 # DS Project Phase 1
 ## Description
-We are using basic client server model and communication is taking place using rest api
-For front-end we have used react.js and bootstrap for styling
-For back-end we have used node.js and express.js
-For DB we have used simple text files
+We are using basic client server model and communication is taking place using rest api. For front-end we have used react.js and bootstrap for styling. For back-end we have used node.js and express.js For DB we have used simple text files.
 
 While deploying, we have used node.js backend itself to deploy the react based front-end
 Front-end and backend are running on the same port 8080 in the docker container. The backend apis have a pre-text 'api'.
