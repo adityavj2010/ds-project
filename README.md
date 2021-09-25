@@ -1,4 +1,5 @@
 # DS Project Phase 1
+
 ## Description
 We are using basic client server model and communication is taking place using rest api. For front-end we have used react.js and bootstrap for styling. For back-end we have used node.js and express.js For DB we have used simple text files.
 
@@ -11,7 +12,8 @@ Client server interacts through REST api. All the messages from the client are r
 
 
 ## GETTING STATED
-Install Docker 
+
+# Install Via Docker 
 
 Run the following
 Building the image 
@@ -26,5 +28,11 @@ docker run -dp SERVER_PORT:8080 IMAGE_NAME
 Run the following after installing docker
 
 docker run -dp SERVER_PORT:8080 adityavj2010/first-image 
+
+# Starting development setup
+For development we will need Node v14.17.4
+Run npm install, npm run build, node server.js
+
+
 
 
